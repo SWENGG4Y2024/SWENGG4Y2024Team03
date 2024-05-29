@@ -41,29 +41,29 @@ This document provides a detailed account of user requirements for the Content R
 ## 2. User Requirements
 
 ### 2.1 Functional Requirements
-- **FR-1:** Users should be able to input product reviews through various means, including text entry and file upload.
-- **FR-2:** Users should receive concise summaries highlighting key phrases and sentiments within a few seconds.
-- **FR-3:** Users should be able to customize the output format of the summaries, such as text or graphical representations.
+- **FR-1:** Users shall be able to input product reviews through various means, including text entry and file upload.
+- **FR-2:** Users shall receive concise summaries highlighting key phrases and sentiments within a few seconds.
+- **FR-3:** Users shall be able to customize the output format of the summaries, such as text or graphical representations.
 
 ### 2.2 Non-Functional Requirements
-- **NFR-1:** The software must ensure data privacy and comply with relevant data protection regulations.
-- **NFR-2:** The software should be reliable and available with minimal downtime.
-- **NFR-3:** The software must be scalable to handle increasing volumes of data efficiently.
+- **NFR-1:** The software shall ensure data privacy and comply with relevant data protection regulations.
+- **NFR-2:** The software shall be reliable and available with minimal downtime.
+- **NFR-3:** The software shall be scalable to handle increasing volumes of data efficiently.
 
 ### 2.3 Usability Requirements
-- **UR-1:** The user interface should be intuitive and easy to navigate, requiring minimal learning time.
-- **UR-2:** The software should provide clear instructions and tooltips for all functionalities.
-- **UR-3:** The software should support accessibility standards to accommodate users with disabilities.
+- **UR-1:** The user interface shall be intuitive and easy to navigate, requiring minimal learning time.
+- **UR-2:** The software shall provide clear instructions and tooltips for all functionalities.
+- **UR-3:** The software shall support accessibility standards to accommodate users with disabilities.
 
 ### 2.4 Performance Requirements
-- **PR-1:** The software should process and analyze input data quickly, with response times typically within a few seconds.
-- **PR-2:** The software should maintain performance levels even under heavy usage or with large datasets.
-- **PR-3:** The software should efficiently manage resources to avoid performance degradation.
+- **PR-1:** The software shall process and analyze input data quickly, with response times typically within a few seconds.
+- **PR-2:** The software shall maintain performance levels even under heavy usage or with large datasets.
+- **PR-3:** The software shall efficiently manage resources to avoid performance degradation.
 
 ### 2.5 Security Requirements
-- **SR-1:** The software should implement user authentication and authorization mechanisms to control access.
-- **SR-2:** The software should encrypt sensitive data during transmission and storage.
-- **SR-3:** The software should include mechanisms for detecting and responding to security threats.
+- **SR-1:** The software shall implement robust user authentication and authorization mechanisms to control access to sensitive functionalities and data.
+- **SR-2:** The software shall encrypt all sensitive data during transmission and storage using industry-standard encryption algorithms and protocols.
+- **SR-3:** The software shall include intrusion detection and prevention systems to detect and respond to security threats.
 
 ## 3. User Profiles
 
@@ -73,11 +73,11 @@ This document provides a detailed account of user requirements for the Content R
 - **Administrators:** Users responsible for managing software settings, user accounts, and integration with external systems.
 
 ### 3.2 User Environment
-- **Operating Systems:** The software should support major operating systems such as Windows, macOS, and Linux.
-- **Devices:** The software should be compatible with various devices, including desktops, laptops, and tablets.
+- **Operating Systems:** The software shall support major operating systems such as Windows, macOS, and Linux.
+- **Devices:** The software shall be compatible with various devices, including desktops, laptops, and tablets.
 - **Internet Access:** Users typically need stable internet access for accessing the software and external resources.
 
 ### 3.3 User Training
-- **Training Materials:** Provide comprehensive training materials, including user manuals, video tutorials, and FAQs.
-- **Support:** Offer user support through various channels such as email, online forums, and helpdesk services.
-- **Feedback Mechanisms:** Implement mechanisms for users to provide feedback and suggestions for improvement.
+- **Training Materials:** The software shall provide comprehensive training materials, including user manuals, interactive tutorials, and knowledge base articles, to assist users in understanding and effectively using the software.
+- **Support Channels:** The software shall offer user support through various channels, including email, live chat, and a dedicated helpdesk system, to address user queries, issues, and concerns in a timely manner.
+- **Feedback Mechanisms:** The software shall incorporate feedback mechanisms such as user surveys, feedback forms, and suggestion boxes to allow users to provide input, suggestions, and recommendations for improving the software's usability and functionality.
