@@ -43,7 +43,7 @@ This document provides an overview of the stakeholder requirements for the Conte
 
 ### 2.1 Business Requirements
 - **BR-1:** The software must provide accurate and reliable summaries of product reviews to enhance customer decision-making processes.
-- **BR-2:** The software should integrate seamlessly with existing e-commerce platforms and review aggregation systems.
+- **BR-2:** The software must integrate seamlessly with existing e-commerce platforms and review aggregation systems.
 - **BR-3:** The software must be scalable to handle an increasing number of reviews as the business grows.
 
 ### 2.2 User Requirements
