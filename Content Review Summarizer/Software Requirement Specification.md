@@ -15,6 +15,7 @@
   - [2.5 Design and Implementation Constraints](#25-design-and-implementation-constraints)
   - [2.6 User Documentation](#26-user-documentation)
   - [2.7 Assumptions and Dependencies](#27-assumptions-and-dependencies)
+  - [2.8 2.8 Accessibility Considerations] (#28-accessibility-considerations)
 - [3. System Features](#3-system-features)
   - [3.1 Admin Features](#31-admin-features)
   - [3.2 User Features](#32-user-features)
@@ -91,6 +92,9 @@ User documentation for the content review summarizer software will include:
 - The software may depend on external natural language processing libraries or APIs for text analysis.
 - Integration with external platforms or systems collecting product reviews may require cooperation and support from those platforms' administrators.
 - The software's performance may be influenced by the availability and reliability of internet connectivity for accessing external resources.
+
+### 2.8 Accessibility Considerations
+- The content review summarizer software will be designed with accessibility in mind to ensure usability by differently-abled audiences, including   individuals who are blind. The software will support screen reader compatibility to provide auditory feedback for all user interface elements and summarized content. Keyboard navigation will be fully implemented to allow users to navigate through the application without the need for a mouse. Additionally, all visual content will include alternative text descriptions to ensure comprehensive access to all features and functionalities. By adhering to the Web Content Accessibility Guidelines (WCAG) 2.1, the software aims to provide an inclusive user experience for all individuals.
 
 ## 3. System Features
 
