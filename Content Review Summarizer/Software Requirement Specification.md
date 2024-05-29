@@ -15,7 +15,7 @@
   - [2.5 Design and Implementation Constraints](#25-design-and-implementation-constraints)
   - [2.6 User Documentation](#26-user-documentation)
   - [2.7 Assumptions and Dependencies](#27-assumptions-and-dependencies)
-  - [2.8 2.8 Accessibility Considerations](#28-accessibility-considerations)
+  - [2.8 Accessibility Considerations](#28-accessibility-considerations)
 - [3. System Features](#3-system-features)
   - [3.1 Admin Features](#31-admin-features)
   - [3.2 User Features](#32-user-features)
