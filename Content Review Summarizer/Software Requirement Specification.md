@@ -94,7 +94,17 @@ User documentation for the content review summarizer software will include:
 - The software's performance may be influenced by the availability and reliability of internet connectivity for accessing external resources.
 
 ### 2.8 Accessibility Considerations
-- The content review summarizer software will be designed with accessibility in mind to ensure usability by differently-abled audiences, including   individuals who are blind. The software will support screen reader compatibility to provide auditory feedback for all user interface elements and summarized content. Keyboard navigation will be fully implemented to allow users to navigate through the application without the need for a mouse. Additionally, all visual content will include alternative text descriptions to ensure comprehensive access to all features and functionalities. By adhering to the Web Content Accessibility Guidelines (WCAG) 2.1, the software aims to provide an inclusive user experience for all individuals.
+The content review summarizer software will be designed not only with general accessibility in mind but also to accommodate users with common special conditions for easier usage. In addition to supporting screen reader compatibility and keyboard navigation, the software will incorporate the following features:
+
+1. **Text Magnification:** Users will have the option to zoom in on text content within the application interface, making it easier for individuals with mild visual impairments to read.
+
+2. **Clear Navigation Labels:** All interactive elements, such as buttons and links, will have clear and descriptive labels. This aids users with cognitive disabilities or screen reader users in understanding the purpose of each element.
+
+3. **Error Prevention and Correction:** The software will include inline validation and error prevention techniques to assist users with cognitive impairments in accurately completing forms and inputting data.
+
+4. **Consistent Layout and Design:** Maintaining a consistent layout and design throughout the application reduces cognitive load for users with learning disabilities or attention disorders. Simple design elements like clear headings and consistent button placement will be employed.
+
+5. **Text-to-Speech Conversion:** Users will have the option to convert text content to speech within the application, enabling individuals with reading difficulties or dyslexia to access information more easily.
 
 ## 3. System Features
 
