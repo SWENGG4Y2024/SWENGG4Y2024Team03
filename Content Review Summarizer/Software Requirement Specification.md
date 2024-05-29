@@ -1,60 +1,61 @@
-# Software Requirement Specification
+# Software Requirements Specification
 
 ## Table of Contents
 - [1. Introduction](#1-introduction)
-   - [1.1 Purpose](#11-purpose)
-   - [1.2 Intended Audience](#12-intended-audience)
-   - [1.3 Intended Use](#13-intended-use)
-   - [1.4 Scope](#14-scope)
-   - [1.5 Definitions, Acronyms, and Abbreviations](#15-definitions-acronyms-and-abbreviations)
+  - [1.1 Purpose](#11-purpose)
+  - [1.2 Scope](#12-scope)
+  - [1.3 Definitions, Acronyms, and Abbreviations](#13-definitions-acronyms-and-abbreviations)
+  - [1.4 References](#14-references)
+  - [1.5 Overview](#15-overview)
 - [2. Overall Description](#2-overall-description)
-   - [2.1 Product Perspective](#21-product-perspective)
-   - [2.2 Product Features](#22-product-features)
-   - [2.3 User Classes and Characteristics](#23-user-classes-and-characteristics)
-   - [2.4 Operating Environment](#24-operating-environment)
-   - [2.5 Design and Implementation Constraints](#25-design-and-implementation-constraints)
-   - [2.6 User Documentation](#26-user-documentation)
-   - [2.7 Assumptions & Dependencies](#27-assumptions--dependencies)
+  - [2.1 Product Perspective](#21-product-perspective)
+  - [2.2 Product Functions](#22-product-functions)
+  - [2.3 User Classes and Characteristics](#23-user-classes-and-characteristics)
+  - [2.4 Operating Environment](#24-operating-environment)
+  - [2.5 Design and Implementation Constraints](#25-design-and-implementation-constraints)
+  - [2.6 User Documentation](#26-user-documentation)
+  - [2.7 Assumptions and Dependencies](#27-assumptions-and-dependencies)
 - [3. System Features](#3-system-features)
-   - [3.1 Admin Features](#31-admin-features)
-   - [3.2 User Features](#32-user-features)
-   - [3.3 Content Review Summarizer Features](#33-content-review-summarizer-features)
+  - [3.1 Admin Features](#31-admin-features)
+  - [3.2 User Features](#32-user-features)
+  - [3.3 Content Review Summarizer Features](#33-content-review-summarizer-features)
 - [4. External Interface Requirements](#4-external-interface-requirements)
-   - [4.1 User Interface Requirements](#41-user-interface-requirements)
-   - [4.2 Hardware Interface Requirements](#42-hardware-interface-requirements)
-   - [4.3 Software Interface Requirements](#43-software-interface-requirements)
-   - [4.4 Communication Interface Requirements](#44-communication-interface-requirements)
+  - [4.1 User Interfaces](#41-user-interfaces)
+  - [4.2 Hardware Interfaces](#42-hardware-interfaces)
+  - [4.3 Software Interfaces](#43-software-interfaces)
+  - [4.4 Communication Interfaces](#44-communication-interfaces)
 - [5. Non-Functional Requirements](#5-non-functional-requirements)
-   - [5.1 Performance Requirements](#51-performance-requirements)
-   - [5.2 Safety Requirements](#52-safety-requirements)
-   - [5.3 Security Requirements](#53-security-requirements)
-   - [5.4 Software Quality Attributes](#54-software-quality-attributes)
+  - [5.1 Performance Requirements](#51-performance-requirements)
+  - [5.2 Safety Requirements](#52-safety-requirements)
+  - [5.3 Security Requirements](#53-security-requirements)
+  - [5.4 Software Quality Attributes](#54-software-quality-attributes)
 
 ## 1. Introduction
 
 ### 1.1 Purpose
 The purpose of this document is to outline the requirements for the development of a content review summarizer software. This software aims to analyze multiple reviews for various products and generate concise summaries highlighting the most relevant keywords and sentiments expressed by users.
 
-### 1.2 Intended Audience
-The intended audience for this software includes developers, designers, project managers, and quality assurance teams involved in its development and deployment. Additionally, potential users of the software, such as e-commerce platforms or review aggregators, are also part of the target audience.
-
-### 1.3 Intended Use
-The content review summarizer software is intended to automate the process of summarizing product reviews from multiple sources. It will analyze text data from reviews and generate concise summaries to provide users with quick insights into the overall sentiments and key features mentioned in the reviews.
-
-### 1.4 Scope
+### 1.2 Scope
 The scope of this software includes developing algorithms to extract key phrases and sentiments from product reviews, implementing a user-friendly interface for inputting and viewing summarized reviews, and integrating the software with existing platforms or systems where product reviews are collected.
 
-### 1.5 Definitions, Acronyms, and Abbreviations
+### 1.3 Definitions, Acronyms, and Abbreviations
 - **Review Summarizer:** The software being developed to summarize product reviews.
 - **Keywords:** Significant words or phrases extracted from reviews that represent important aspects of the product.
 - **Sentiments:** The emotions or opinions expressed in the reviews, such as positive, negative, or neutral.
+
+### 1.4 References
+- [SWEBOK Guide](https://www.computer.org/web/swebok)
+- [IEEE Standard 830-1998](https://standards.ieee.org/standard/830-1998.html)
+
+### 1.5 Overview
+This document provides an overview of the Content Review Summarizer, its functionality, user interactions, and constraints. It is intended to serve as a comprehensive guide for the development and maintenance of the software.
 
 ## 2. Overall Description
 
 ### 2.1 Product Perspective
 The content review summarizer software will operate as a standalone system that can be integrated with various platforms or systems collecting product reviews. It will analyze text data from reviews using natural language processing techniques and generate summaries based on key phrases and sentiments extracted from the reviews.
 
-### 2.2 Product Features
+### 2.2 Product Functions
 - **Review Analysis:** Analyze text data from product reviews to extract key phrases and sentiments.
 - **Keyword Identification:** Identify significant keywords representing important aspects of the product mentioned in the reviews.
 - **Sentiment Analysis:** Determine the overall sentiments expressed in the reviews, categorizing them as positive, negative, or neutral.
@@ -80,7 +81,7 @@ User documentation for the content review summarizer software will include:
 - **User Manual:** A comprehensive guide on how to use the software, including inputting reviews, viewing summaries, and adjusting settings.
 - **FAQs:** Answers to frequently asked questions about the software's features and functionalities.
 
-### 2.7 Assumptions & Dependencies
+### 2.7 Assumptions and Dependencies
 **Assumptions:**
 - Users will provide accurate and relevant product reviews for analysis.
 - The software will have access to sufficient computational resources for text analysis tasks.
@@ -114,19 +115,19 @@ The features specific to the content review summarizer include:
 
 ## 4. External Interface Requirements
 
-### 4.1 User Interface Requirements
+### 4.1 User Interfaces
 - **Input Interface:** Provide a user-friendly interface for inputting product reviews, supporting text entry and file upload options.
 - **Output Interface:** Display summarized results in a clear and understandable format, with options for customization and export.
 
-### 4.2 Hardware Interface Requirements
+### 4.2 Hardware Interfaces
 - **Computing Devices:** Support various computing devices such as desktop computers, laptops, and servers for running the software.
 - **Storage Devices:** Allow for data storage and retrieval from local or cloud-based storage solutions.
 
-### 4.3 Software Interface Requirements
+### 4.3 Software Interfaces
 - **API Integration:** Provide APIs for integration with external platforms or systems collecting product reviews.
 - **Data Import/Export:** Support data import/export functionalities for exchanging data with external systems.
 
-### 4.4 Communication Interface Requirements
+### 4.4 Communication Interfaces
 - **API Documentation:** Provide comprehensive documentation for APIs, including endpoints, parameters, and authentication methods.
 - **Support Channels:** Offer communication channels such as email or online forums for user support and assistance.
 
@@ -153,3 +154,5 @@ The features specific to the content review summarizer include:
 - **Performance:** Optimize the software's performance to deliver fast and responsive user experiences, even with large datasets and complex analysis tasks.
 - **Scalability:** Design the software to scale horizontally and vertically to accommodate growing user bases and increasing data volumes.
 - **Compatibility:** Ensure compatibility with various operating systems, browsers, and devices to maximize accessibility for users.
+
+This SRS outlines the requirements for developing a content review summarizer software, including its features, interfaces, and non-functional characteristics.
