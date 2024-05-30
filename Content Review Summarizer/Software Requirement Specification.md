@@ -168,5 +168,3 @@ The features specific to the content review summarizer include:
 - **Performance:** Optimize the software's performance to deliver fast and responsive user experiences, even with large datasets and complex analysis tasks.
 - **Scalability:** Design the software to scale horizontally and vertically to accommodate growing user bases and increasing data volumes.
 - **Compatibility:** Ensure compatibility with various operating systems, browsers, and devices to maximize accessibility for users.
-
-This SRS outlines the requirements for developing a content review summarizer software, including its features, interfaces, and non-functional characteristics.
