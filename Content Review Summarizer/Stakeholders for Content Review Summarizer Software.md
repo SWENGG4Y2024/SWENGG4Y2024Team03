@@ -15,9 +15,8 @@
   - [2.5 Assumptions and Dependencies](#25-assumptions-and-dependencies)
 - [3. Stakeholder Profiles](#3-stakeholder-profiles)
   - [3.1 Stakeholder Identification](#31-stakeholder-identification)
-  - [3.2 Stakeholder Responsibilities](#32-stakeholder-responsibilities)
-  - [3.3 Stakeholder Involvement](#33-stakeholder-involvement)
-  - [3.4 Stakeholder Priorities](#34-stakeholder-priorities)
+  - [3.2 Stakeholder Involvement](#33-stakeholder-involvement)
+  - [3.3 Stakeholder Priorities](#34-stakeholder-priorities)
 
 ## 1. Introduction
 
@@ -98,13 +97,13 @@ This document provides an overview of the stakeholder requirements for the Conte
 ### 3.1.4 Regulatory Bodies
 - **Data Privacy Advocates:** Especially if the summarizer involves user data, advocates for data privacy may have a stake in ensuring that users' information is handled responsibly and ethically.
 
-### 3.3 Stakeholder Involvement
+### 3.2 Stakeholder Involvement
 - **Business Owners:** Regular review meetings, feedback on business requirements.
 - **Developers:** Continuous involvement throughout the development lifecycle, from requirements gathering to deployment.
 - **End Users:** User testing sessions, feedback surveys.
 - **Regulatory Bodies:** Compliance checks, audits, and reviews.
 
-### 3.4 Stakeholder Priorities
+### 3.3 Stakeholder Priorities
 - **Business Owners:** High priority on integration and scalability.
 - **Developers:** High priority on technical feasibility and performance.
 - **End Users:** High priority on usability and accuracy of summaries.
