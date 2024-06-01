@@ -58,18 +58,19 @@ The content review summarizer software will operate as a standalone system that 
 
 ### 2.2 Product Functions
 - **Review Analysis:** Analyze text data from product reviews to extract key phrases and sentiments.
-- **Keyword Identification:** Identify significant keywords representing important aspects of the product mentioned in the reviews.
+- **Keyword Identification:** Identify significant keywords along with the expressed sentiment representing important aspects of the product mentioned in the reviews in a quantitative manner.
+- **Information Updation:** Update current summarization to make up for new reviews added every 6 hours.
 - **Sentiment Analysis:** Determine the overall sentiments expressed in the reviews, categorizing them as positive, negative, or neutral.
-- **Summarization:** Generate concise summaries of product reviews highlighting key phrases and sentiments for quick insights.
-- **User Interface:** Provide a user-friendly interface for individuals to input product reviews, view summarized results, and adjust settings if necessary.
+- **Incremental Summarization:** Generate concise summaries of product reviews highlighting key phrases and sentiments for quick insights separated by keywords and accompanied sentiments.
+- **Real-time Updates:** Continuously update summarizations to reflect new reviews and changes in sentiment every 6 hours.
 
 ### 2.3 User Classes and Characteristics
 - **Developers:** Responsible for designing, developing, and maintaining the software.
 - **Administrators:** Manage the settings and configurations of the software, such as integration with external platforms.
-- **End Users:** Potential buyers and actual purchasers who utilize the software to generate summaries of product reviews. They can have varying levels of technical expertise.
+- **Product Customers:** Potential buyers and actual purchasers who utilize the software to generate summaries of product reviews. They can have varying levels of technical expertise.
 
 ### 2.4 Operating Environment
-The software should be compatible with major operating systems such as Windows, macOS, and Linux. It should also support integration with web-based platforms through APIs or data import/export functionalities.
+The software should be compatible with major operating systems such as Windows, macOS, and Linux. It should also support integration with web-based e-commerce platforms through APIs or data import/export functionalities.
 
 ### 2.5 Design and Implementation Constraints
 - **Natural Language Processing Libraries:** The software shall rely on existing natural language processing libraries or APIs for text analysis and sentiment analysis.
@@ -78,8 +79,6 @@ The software should be compatible with major operating systems such as Windows, 
 
 ### 2.6 User Documentation
 User documentation for the content review summarizer software will include:
-- **Installation Guide:** Instructions for installing and setting up the software.
-- **User Manual:** A comprehensive guide on how to use the software, including inputting reviews, viewing summaries, and adjusting settings.
 - **FAQs:** Answers to frequently asked questions about the software's features and functionalities.
 
 ### 2.7 Assumptions and Dependencies
