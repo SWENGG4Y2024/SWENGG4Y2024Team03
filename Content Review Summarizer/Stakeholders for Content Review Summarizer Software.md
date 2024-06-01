@@ -71,16 +71,32 @@ This document provides an overview of the stakeholder requirements for the Conte
 ## 3. Stakeholder Profiles
 
 ### 3.1 Stakeholder Identification
+- **Potential Users/Purchasers:** Individuals or entities using the software to generate summaries of product reviews.
 - **Business Owners:** Interested in the commercial success and integration of the software.
-- **Developers:** Responsible for creating and maintaining the software.
-- **End Users:** Individuals or entities using the software to generate summaries of product reviews.
+- **Developers and Quality Team:** Responsible for creating and maintaining the software.
 - **Regulatory Bodies:** Ensure compliance with legal and data protection standards.
 
-### 3.2 Stakeholder Responsibilities
-- **Business Owners:** Provide funding, define business requirements, and ensure alignment with business goals.
-- **Developers:** Design, implement, and maintain the software according to specified requirements.
-- **End Users:** Provide feedback on usability and functionality of the software.
-- **Regulatory Bodies:** Ensure the software complies with legal and regulatory standards.
+### 3.1.1 Potential Users/Purchasers
+- **Content Creators/Publishers:** They want to ensure that their content is accurately summarized and effectively communicates the main points to readers.
+- **Readers/Audience:** They benefit from concise summaries that help them quickly grasp the key points of the content without having to read through the entire piece.
+- **Content Consumers:** These could be individuals or businesses who rely on summarized content for research, decision-making, or staying updated on relevant topics.
+- **Platform Providers:** If the summarizer is integrated into a platform (such as a news website or a content aggregation service), the providers of that platform are stakeholders as they are interested in enhancing user experience and engagement.
+- **Advertisers/Sponsors:** They may have an interest in ensuring that the summarized content aligns with their brand values or targets the right audience segments.
+- **Educators/Researchers:** They may be interested in how the summarizer affects reading comprehension, information retention, and other aspects of learning and cognition.
+
+### 3.1.2 Business Users
+- **Client/Product Owner:** Provides requirements and feedback, expects the software to align with organizational goals.
+- **Management/Stakeholder Representatives:** Provide strategic direction and ensure the project aligns with business objectives.
+- **External Partners/Vendors:** Collaborate with the development team to provide expertise and resources, such as NLP experts and cloud service providers.
+- **Investors/Shareholders:** In the case of companies developing or utilizing summarization technology, investors and shareholders are stakeholders with a financial interest in the success and impact of the product
+
+### 3.1.3 Development and Quality team
+- **Developers:** Those involved in developing the summarization technology are stakeholders, as they aim to improve and market their product to meet the needs of users and clients.
+- **Architect:** Architect of a development Team is supposed to come up with an architecture paradigm that is best suited for developing the tool.
+- **Quality Assurance (QA)Team:** Ensures the software's quality and performance through comprehensive testing.
+
+### 3.1.4 Regulatory Bodies
+- **Data Privacy Advocates:** Especially if the summarizer involves user data, advocates for data privacy may have a stake in ensuring that users' information is handled responsibly and ethically.
 
 ### 3.3 Stakeholder Involvement
 - **Business Owners:** Regular review meetings, feedback on business requirements.
