@@ -21,7 +21,7 @@
 ## 1. Introduction
 
 ### 1.1 Purpose
-The purpose of this document is to outline the requirements and expectations of stakeholders for the development of a content review summarizer software. It identifies the needs and objectives of the business, users, and regulatory bodies to ensure that the final product meets their requirements.
+The purpose of this document is to outline the requirements and expectations of stakeholders for the development of a content review summarizer software. It identifies the needs and objectives of the business, potential users, and regulatory bodies to ensure that the final product meets their requirements.
 
 ### 1.2 Scope
 The scope of this document includes the identification of stakeholders, their needs, and how these needs translate into specific requirements for the content review summarizer software.
@@ -29,7 +29,7 @@ The scope of this document includes the identification of stakeholders, their ne
 ### 1.3 Definitions, Acronyms, and Abbreviations
 - **Stakeholder:** An individual or group with an interest in the success of the software project.
 - **Business Requirements:** High-level needs of the organization that the software must fulfill.
-- **User Requirements:** Specific needs and expectations of the end users who will interact with the software.
+- **Potential User Requirements:** Specific needs and expectations of the end users who will interact with the software.
 
 ### 1.4 References
 - [SWEBOK Guide](https://www.computer.org/web/swebok)
@@ -98,13 +98,13 @@ This document provides an overview of the stakeholder requirements for the Conte
 - **Data Privacy Advocates:** Especially if the summarizer involves user data, advocates for data privacy may have a stake in ensuring that users' information is handled responsibly and ethically.
 
 ### 3.2 Stakeholder Involvement
+- **Potential users/ Purchasers:** User testing sessions, feedback surveys.
 - **Business Owners:** Regular review meetings, feedback on business requirements.
-- **Developers:** Continuous involvement throughout the development lifecycle, from requirements gathering to deployment.
-- **End Users:** User testing sessions, feedback surveys.
+- **Developers and Quality Team:** Continuous involvement throughout the development lifecycle, from requirements gathering to deployment.
 - **Regulatory Bodies:** Compliance checks, audits, and reviews.
 
 ### 3.3 Stakeholder Priorities
+- **Potential users/Purchasers:** High priority on usability and accuracy of summaries.
 - **Business Owners:** High priority on integration and scalability.
-- **Developers:** High priority on technical feasibility and performance.
-- **End Users:** High priority on usability and accuracy of summaries.
+- **Developers & Quality Team:** High priority on technical feasibility and performance.
 - **Regulatory Bodies:** High priority on data privacy and compliance.
