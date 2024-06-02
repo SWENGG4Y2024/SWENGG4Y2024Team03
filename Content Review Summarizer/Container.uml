@@ -1,0 +1,33 @@
+@startuml 
+title Container Diagram for Review Summarizer Tool
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+Person(businessClients, "Business Clients", "Businesses utilizing the software to generate summaries of product reviews.")
+Person(externalPlatforms, "External Platforms", "Platforms providing product reviews.")
+
+System_Boundary(sb, "Review Summarizer Tool") {
+    Container(userInterface, "User Interface", "React, HTML, CSS", "Provides the interface for viewing summaries and adjusting settings.")
+    Container(apiGateway, "API Gateway", "Node.js, Express", "Handles requests from UI and external platforms.")
+    Container(nlpService, "NLP Service", "Python, TensorFlow, spaCy", "Processes text data to extract key phrases and sentiments.")
+    Container(database, "Database", "PostgreSQL", "Stores reviews and generated summaries.")
+}
+
+together {
+    System_Ext(nlpLibraries, "NLP Libraries/APIs", "spaCy, NLTK, TextBlob", "Provides NLP functionalities.")
+    System_Ext(reviewPlatforms, "Integration Platforms", "Web platforms providing product reviews.")
+    System_Ext(storageService, "Cloud Storage", "AWS S3, iCloud storage", "Stores review data and summaries.")
+}
+
+Rel(businessClients, userInterface, "Interacts with")
+Rel(userInterface, apiGateway, "Sends requests to")
+Rel(apiGateway, nlpService, "Sends text for analysis to")
+Rel(nlpService, database, "Stores summaries in")
+Rel(apiGateway, database, "Reads/writes reviews and summaries to/from")
+Rel(externalPlatforms, apiGateway, "Provides reviews to")
+Rel(reviewPlatforms, apiGateway, "Sends review data")
+
+Rel(apiGateway, nlpLibraries, "Utilizes for text analysis")
+Rel(database, storageService, "Stores data in")
+Rel(nlpService, storageService, "Fetches data from")
+
+@enduml
