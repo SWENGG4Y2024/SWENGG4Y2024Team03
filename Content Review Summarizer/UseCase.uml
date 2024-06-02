@@ -1,0 +1,33 @@
+@startuml
+title Use Case Diagram for Review Summarizer Tool
+
+actor BusinessClient as bc
+actor Developer as d
+actor Administrator as a
+actor ExternalPlatform as ep
+
+rectangle ReviewSummarizerTool {
+  usecase "Analyze Reviews" as UC1
+  usecase "Identify Keywords" as UC2
+  usecase "Perform Sentiment Analysis" as UC3
+  usecase "Generate Summary" as UC4
+  usecase "View Summary" as UC5
+  usecase "Adjust Settings" as UC6
+  usecase "Manage Integration" as UC7
+  usecase "Maintain Software" as UC8
+}
+
+ep --> UC1 : Provides Reviews
+bc --> UC5 : Views Summary
+bc --> UC6 : Adjusts Settings
+
+a --> UC6 : Adjusts Settings
+a --> UC7 : Manages Integration
+
+d --> UC8 : Maintains Software
+
+UC1 --> UC2 : Includes
+UC1 --> UC3 : Includes
+UC1 --> UC4 : Includes
+
+@enduml
