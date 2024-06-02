@@ -17,7 +17,7 @@
   - [2.7 Assumptions & Dependencies](#27-assumptions-&-dependencies)
 - [3. System Features](#3-system-features)
   - [3.1 Admin Features](#31-admin-features)
-  - [3.2 User Features](#32-user-features)
+  - [3.2 Potential Buyer Features](#32-user-features)
   - [3.3 Content Creator Features](#33-content-creator-features)
 - [4. Functional Requirements](#4-functional-requirements)
   - [4.1 User Interface Requirements](#41-user-interface-requirements)
@@ -42,7 +42,7 @@ The intended audience for the Content Review Summarizer includes developers, des
 The Content Review Summarizer is intended to analyze and summarize product reviews on e-commerce platforms, providing concise summaries using keywords and categorizing them based on product-specific attributes. This tool will also update summaries with new reviews every six hours.
 
 ### 1.4 Scope
-The scope of this product includes the development of a robust backend for analyzing and summarizing reviews, an intuitive interface for administrators to configure keywords and categories, and integration with e-commerce platforms. The tool will cater to various stakeholders such as potential users, business owners, developers, quality teams, and regulatory bodies.
+The scope of this product includes the development of a robust backend for analyzing and summarizing reviews, an intuitive interface for administrators to configure keywords and categories, and integration with e-commerce platforms. The tool will cater to various stakeholders such as potential buyers, business owners, developers, quality teams, and regulatory bodies.
 
 ### 1.5 Definitions, Acronyms, and Abbreviations
 | Term                    | Definition |
@@ -58,7 +58,7 @@ The scope of this product includes the development of a robust backend for analy
 ## 2. Overall Description
 
 ### 2.1 Product Perspective
-The Content Review Summarizer is positioned as a tool that enhances the user experience on e-commerce platforms by providing concise summaries of product reviews. It aims to help potential buyers make informed decisions quickly.
+The Content Review Summarizer is positioned as a tool that enhances the buyer experience on e-commerce platforms by providing concise summaries of product reviews. It aims to help potential buyers make informed decisions quickly.
 
 ### 2.2 Product Features
 - Summarizes product reviews using specified keywords.
@@ -69,7 +69,7 @@ The Content Review Summarizer is positioned as a tool that enhances the user exp
 
 ### 2.3 User Classes and Characteristics
 - **Potential Buyers:** Use the tool to quickly understand product pros and cons.
-- **Business Owners:** Integrate the tool to enhance user experience and increase sales.
+- **Business Owners:** Integrate the tool to enhance buyer experience and increase sales.
 - **Developers and Quality Team:** Build, maintain, and ensure the quality of the software.
 - **Regulatory Bodies:** Ensure compliance with legal standards and data protection.
 - **Content Creators/Publishers:** Ensure accurate summaries of their content.
@@ -131,7 +131,7 @@ The Content Review Summarizer is positioned as a tool that enhances the user exp
 - View summary performance metrics.
 - Ensure data compliance and security.
 
-### 3.2 User Features
+### 3.2 Potential Buyer Features
 - View concise summaries of product reviews.
 - Filter reviews based on categories and keywords.
 - Access updated summaries every six hours.
