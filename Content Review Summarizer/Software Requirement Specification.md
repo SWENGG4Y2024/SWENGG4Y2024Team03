@@ -1,31 +1,30 @@
-# Software Requirements Specification
+# Software Requirement Specification
 
 ## Table of Contents
 - [1. Introduction](#1-introduction)
   - [1.1 Purpose](#11-purpose)
-  - [1.2 Scope](#12-scope)
-  - [1.3 Definitions, Acronyms, and Abbreviations](#13-definitions-acronyms-and-abbreviations)
-  - [1.4 References](#14-references)
-  - [1.5 Overview](#15-overview)
+  - [1.2 Intended Audience](#12-intended-audience)
+  - [1.3 Intended Use](#13-intended-use)
+  - [1.4 Scope](#14-scope)
+  - [1.5 Definitions, Acronyms, and Abbreviations](#15-definitions-acronyms-and-abbreviations)
 - [2. Overall Description](#2-overall-description)
   - [2.1 Product Perspective](#21-product-perspective)
-  - [2.2 Product Functions](#22-product-functions)
+  - [2.2 Product Features](#22-product-features)
   - [2.3 User Classes and Characteristics](#23-user-classes-and-characteristics)
   - [2.4 Operating Environment](#24-operating-environment)
   - [2.5 Design and Implementation Constraints](#25-design-and-implementation-constraints)
   - [2.6 User Documentation](#26-user-documentation)
-  - [2.7 Assumptions and Dependencies](#27-assumptions-and-dependencies)
-  - [2.8 Accessibility Considerations](#28-accessibility-considerations)
+  - [2.7 Assumptions & Dependencies](#27-assumptions-&-dependencies)
 - [3. System Features](#3-system-features)
   - [3.1 Admin Features](#31-admin-features)
-  - [3.2 End User Features](#32-end-user-features)
-  - [3.3 Content Review Summarizer Features](#33-content-review-summarizer-features)
-- [4. External Interface Requirements](#4-external-interface-requirements)
-  - [4.1 User Interfaces](#41-user-interfaces)
-  - [4.2 Hardware Interfaces](#42-hardware-interfaces)
-  - [4.3 Software Interfaces](#43-software-interfaces)
-  - [4.4 Communication Interfaces](#44-communication-interfaces)
-- [5. Non-Functional Requirements](#5-non-functional-requirements)
+  - [3.2 User Features](#32-user-features)
+  - [3.3 Content Creator Features](#33-content-creator-features)
+- [4. Functional Requirements](#4-functional-requirements)
+  - [4.1 User Interface Requirements](#41-user-interface-requirements)
+  - [4.2 Hardware Interface Requirements](#42-hardware-interface-requirements)
+  - [4.3 Software Interface Requirements](#43-software-interface-requirements)
+  - [4.4 Communication Interface Requirements](#44-communication-interface-requirements)
+- [5. Non Functional Requirements](#5-non-functional-requirements)
   - [5.1 Performance Requirements](#51-performance-requirements)
   - [5.2 Safety Requirements](#52-safety-requirements)
   - [5.3 Security Requirements](#53-security-requirements)
@@ -34,136 +33,156 @@
 ## 1. Introduction
 
 ### 1.1 Purpose
-The purpose of this document is to outline the requirements for the development of a content review summarizer software. This software aims to be integrated by e-commerce websites and applications to analyze multiple reviews for various products and generate concise summaries highlighting for potential customers using the most relevant keywords and sentiments expressed by actual purchasers of the product.
+The purpose of this document is to provide a comprehensive overview of the requirements for the development of a "Content Review Summarizer," a software tool used as an extension by e-commerce apps and websites like Amazon and Flipkart. This document serves as a reference for stakeholders involved in the development process and outlines the functional and non-functional requirements of the system.
 
-### 1.2 Scope
-The scope of this software includes developing algorithms to extract key phrases and sentiments from product reviews, implementing a user-friendly interface for inputting and viewing summarized reviews, and integrating the software with existing platforms or systems where product reviews are collected.
+### 1.2 Intended Audience
+The intended audience for the Content Review Summarizer includes developers, designers, project managers, quality assurance teams, potential buyers, business owners, regulatory bodies, external partners, vendors, investors, and stakeholders responsible for overseeing the project's progress and ensuring alignment with business goals.
 
-### 1.3 Definitions, Acronyms, and Abbreviations
-- **Review Summarizer:** The software being developed to summarize product reviews.
-- **Keywords:** Significant words or phrases extracted from reviews that represent important aspects of the product.
-- **Sentiments:** The emotions or opinions expressed in the reviews, such as positive, negative, or neutral.
+### 1.3 Intended Use
+The Content Review Summarizer is intended to analyze and summarize product reviews on e-commerce platforms, providing concise summaries using keywords and categorizing them based on product-specific attributes. This tool will also update summaries with new reviews every six hours.
 
-### 1.4 References
-- [SWEBOK Guide](https://www.computer.org/web/swebok)
-- [IEEE Standard 830-1998](https://standards.ieee.org/standard/830-1998.html)
+### 1.4 Scope
+The scope of this product includes the development of a robust backend for analyzing and summarizing reviews, an intuitive interface for administrators to configure keywords and categories, and integration with e-commerce platforms. The tool will cater to various stakeholders such as potential users, business owners, developers, quality teams, and regulatory bodies.
 
-### 1.5 Overview
-This document provides an overview of the Content Review Summarizer, its functionality, user interactions, and constraints. It is intended to serve as a comprehensive guide for the development and maintenance of the software.
+### 1.5 Definitions, Acronyms, and Abbreviations
+| Term                    | Definition |
+|-------------------------|------------|
+| API                     | Application Programming Interface |
+| SRS                     | Software Requirements Specification |
+| NLP                     | Natural Language Processing |
+| GDPR                    | General Data Protection Regulation |
+| CDN                     | Content Delivery Network |
+| UI                      | User Interface |
+| QA                      | Quality Assurance |
 
 ## 2. Overall Description
 
 ### 2.1 Product Perspective
-The content review summarizer software will operate as a standalone system that can be integrated with various platforms or systems collecting product reviews. It will analyze text data from reviews using natural language processing techniques and generate summaries based on key phrases and sentiments extracted from the reviews.
+The Content Review Summarizer is positioned as a tool that enhances the user experience on e-commerce platforms by providing concise summaries of product reviews. It aims to help potential buyers make informed decisions quickly.
 
-### 2.2 Product Functions
-- **Review Analysis:** Analyze text data from product reviews to extract key phrases and sentiments.
-- **Keyword Identification:** Identify significant keywords along with the expressed sentiment representing important aspects of the product mentioned in the reviews in a quantitative manner.
-- **Information Updation:** Update current summarization to make up for new reviews added every 6 hours.
-- **Sentiment Analysis:** Determine the overall sentiments expressed in the reviews, categorizing them as positive, negative, or neutral.
-- **Incremental Summarization:** Generate concise summaries of product reviews highlighting key phrases and sentiments for quick insights separated by keywords and accompanied sentiments.
-- **Real-time Updates:** Continuously update summarizations to reflect new reviews and changes in sentiment every 6 hours.
+### 2.2 Product Features
+- Summarizes product reviews using specified keywords.
+- Segregates summaries into categories based on product type.
+- Updates summaries every six hours with new reviews.
+- Allows administrators to configure keywords and categories.
+- Provides quantitative measures of sentiments (e.g., good battery, bad material).
 
 ### 2.3 User Classes and Characteristics
-- **Developers:** Responsible for designing, developing, and maintaining the software.
-- **Administrators:** Manage the settings and configurations of the software, such as integration with external platforms.
-- **Product Customers:** Potential buyers and actual purchasers who utilize the software to generate summaries of product reviews. They can have varying levels of technical expertise.
+- **Potential Buyers:** Use the tool to quickly understand product pros and cons.
+- **Business Owners:** Integrate the tool to enhance user experience and increase sales.
+- **Developers and Quality Team:** Build, maintain, and ensure the quality of the software.
+- **Regulatory Bodies:** Ensure compliance with legal standards and data protection.
+- **Content Creators/Publishers:** Ensure accurate summaries of their content.
+- **Readers/Audience:** Benefit from concise summaries.
+- **Content Consumers:** Use summarized content for research and decision-making.
+- **Platform Providers:** Integrate the tool to enhance platform usability.
+- **Advertisers/Sponsors:** Ensure summaries align with their brand values.
+- **Educators/Researchers:** Study the impact of the summarizer on reading comprehension.
+- **Client/Product Owner:** Provides requirements and feedback.
+- **Management/Stakeholder Representatives:** Ensure project alignment with business objectives.
+- **External Partners/Vendors:** Provide expertise and resources.
+- **Investors/Shareholders:** Have a financial interest in the product's success.
+- **Architect:** Designs the architecture for the tool.
+- **Quality Assurance (QA) Team:** Ensures software quality through testing.
+- **Data Privacy Advocates:** Ensure responsible handling of user data.
 
 ### 2.4 Operating Environment
-The software should be compatible with major operating systems such as Windows, macOS, and Linux. It should also support integration with web-based e-commerce platforms through APIs or data import/export functionalities.
+- **Web Browsers:**
+  - Chrome (latest version: 113.0)
+  - Firefox (latest version: 112.0)
+  - Safari (latest version: 16.4)
+  - Edge (latest version: 113.0)
+- **Operating Systems:**
+  - Windows 11
+  - macOS 13 Ventura
+  - Linux distributions (Ubuntu 22.04, Fedora 37)
+  - iOS 16
+  - Android 13
+- **Servers:** Cloud-based solutions for scalability and reliability.
+- **Network Requirements:** Stable internet connection with minimum 5 Mbps for standard performance.
 
 ### 2.5 Design and Implementation Constraints
-- **Natural Language Processing Libraries:** The software shall rely on existing natural language processing libraries or APIs for text analysis and sentiment analysis.
-- **Data Privacy:** Ensure compliance with data privacy regulations and protect user data during the analysis process.
-- **Scalability:** Design the software to handle large volumes of text data efficiently, allowing for scalability as the number of reviews increases.
+- **Compliance:** Must adhere to GDPR and other relevant data protection regulations.
+- **Scalability:** Must handle high traffic volumes, especially during peak hours.
+- **Security:** Must ensure data protection and prevent unauthorized access.
+- **Performance:** Summaries must be generated within 5 seconds.
 
 ### 2.6 User Documentation
-User documentation for the content review summarizer software will include:
-- **FAQs:** Answers to frequently asked questions about the software's features and functionalities.
+- **Getting Started Guide:** Instructions for integrating and using the tool.
+- **Admin Guide:** Detailed guide on configuring keywords and categories.
+- **Troubleshooting:** Common issues and solutions.
+- **Privacy Policy:** Guidelines on data protection and user privacy.
 
-### 2.7 Assumptions and Dependencies
-**Assumptions:**
-- Potential buyers will provide accurate and relevant product reviews for analysis.
-- The software will have access to sufficient computational resources for text analysis tasks.
-- The accuracy of the summaries generated by the software can vary based on the quality and quantity of input reviews.
-
-**Dependencies:**
-- The software depends on external natural language processing libraries or APIs for text analysis.
-- Integration with external platforms or systems collecting product reviews requires cooperation and support from those platforms' administrators.
-- The software's performance is influenced by the availability and reliability of internet connectivity for accessing external resources.
-
-### 2.8 Accessibility Considerations
-The content review summarizer software will be designed not only with general accessibility in mind but also to accommodate potential buyers with common special conditions for easier usage. In addition to supporting screen reader compatibility and keyboard navigation, the software will incorporate the following features:
-
-1. **Text Magnification:** Potential buyers will have the option to zoom in on text content within the application interface, making it easier for individuals with mild visual impairments to read.
-
-2. **Clear Navigation Labels:** All interactive elements, such as buttons and links, will have clear and descriptive labels. This aids potential buyers with cognitive disabilities or screen reader users in understanding the purpose of each element.
-
-3. **Error Prevention and Correction:** The software will include inline validation and error prevention techniques to assist potential buyers with cognitive impairments in accurately completing forms and inputting data.
-
-4. **Consistent Layout and Design:** Maintaining a consistent layout and design throughout the application reduces cognitive load for potential buyers with learning disabilities or attention disorders. Simple design elements like clear headings and consistent button placement will be employed.
-
-5. **Text-to-Speech Conversion:** Potential buyers will have the option to convert text content to speech within the application, enabling individuals with reading difficulties or dyslexia to access information more easily.
+### 2.7 Assumptions & Dependencies
+- **Assumptions:**
+  - Potential buyers will have reliable internet access.
+  - Administrators will regularly update keywords and categories.
+  - Reviews will be in a consistent format suitable for NLP processing.
+- **Dependencies:**
+  - Dependence on cloud service providers for infrastructure.
+  - Dependence on third-party APIs for data integration.
+  - Compliance with regional data protection laws.
 
 ## 3. System Features
 
 ### 3.1 Admin Features
-The features available to administrators include:
-- **Integration Settings:** Configure integration with external platforms or systems collecting product reviews.
-- **Customization Options:** Adjust settings related to text analysis algorithms and summarization parameters.
-- **User Management:** Manage potential buyer accounts and permissions for accessing the software.
+- Configure keywords and categories for different products.
+- Monitor and update summary configurations.
+- View summary performance metrics.
+- Ensure data compliance and security.
 
-### 3.2 End User Features
-The features available to potential buyers include:
-- **Review Input:** Input product reviews for analysis, either individually or in bulk.
-- **Summary Generation:** Generate concise summaries of product reviews, highlighting key phrases and sentiments.
-- **Viewing Options:** View summarized results in various formats, such as text or graphical representations.
+### 3.2 User Features
+- View concise summaries of product reviews.
+- Filter reviews based on categories and keywords.
+- Access updated summaries every six hours.
 
-### 3.3 Content Review Summarizer Features
-The features specific to the content review summarizer include:
-- **Text Analysis:** Analyze text data from product reviews to extract key phrases and sentiments.
-- **Keyword Identification:** Identify significant keywords representing important aspects of the product mentioned in the reviews.
-- **Sentiment Analysis:** Determine the overall sentiments expressed in the reviews, categorizing them as positive, negative, or neutral.
-- **Summarization:** Generate concise summaries of product reviews based on extracted key phrases and sentiments.
+### 3.3 Content Creator Features
+- Ensure accuracy and clarity in content summaries.
+- Review summary performance metrics.
+- Provide feedback for improving summarization quality.
 
-## 4. External Interface Requirements
+## 4. Functional Requirements
 
-### 4.1 User Interfaces
-- **Input Interface:** Provide a user-friendly interface for potential buyers to input product reviews, supporting text entry and file upload options.
-- **Output Interface:** Display summarized results in a clear and understandable format, with options for customization and export.
+### 4.1 User Interface Requirements
+- **Dashboard:** Provide an overview of summary metrics and configurations.
+- **Configuration Page:** Allow administrators to set and update keywords and categories.
+- **Summary Display:** Show concise, categorized summaries to potential buyers.
+- **Loading Time:** Ensure all pages load within 5 seconds.
 
-### 4.2 Hardware Interfaces
-- **Computing Devices:** Support various computing devices such as desktop computers, laptops, and servers for running the software.
-- **Storage Devices:** Allow for data storage and retrieval from local or cloud-based storage solutions.
+### 4.2 Hardware Interface Requirements
+- **Servers:** High-performance cloud servers for data processing.
+- **Devices:** Compatible with desktops, laptops, tablets, and smartphones.
+- **Network:** Minimum 5 Mbps internet connection for optimal performance.
 
-### 4.3 Software Interfaces
-- **API Integration:** Provide APIs for integration with external platforms or systems collecting product reviews.
-- **Data Import/Export:** Support data import/export functionalities for exchanging data with external systems.
+### 4.3 Software Interface Requirements
+- **APIs:** Integrate with e-commerce platforms via secure APIs.
+- **NLP Engines:** Use advanced NLP libraries for accurate summarization.
+- **Databases:** Secure, scalable databases for storing review data and summaries.
 
-### 4.4 Communication Interfaces
-- **API Documentation:** Provide comprehensive documentation for APIs, including endpoints, parameters, and authentication methods.
-- **Support Channels:** Offer communication channels such as email or online forums for potential buyer support and assistance.
+### 4.4 Communication Interface Requirements
+- **Secure Communication:** Use HTTPS for all data transmissions.
+- **API Documentation:** Provide comprehensive API documentation for developers.
+- **Customer Support:** Offer multi-channel support including email, chat, and phone.
 
-## 5. Non-Functional Requirements
+## 5. Non Functional Requirements
 
 ### 5.1 Performance Requirements
-- **Response Time:** Ensure quick response times for analyzing and summarizing product reviews, typically within a few seconds.
-- **Scalability:** Design the software to handle increasing workloads and data volumes efficiently, maintaining performance under heavy usage.
-- **Accuracy:** Achieve high accuracy in text analysis and summarization tasks, minimizing errors and discrepancies in the results.
+- **Response Time:** Summarization process should complete within 5 seconds.
+- **Uptime:** Ensure 99.9% system availability.
+- **Scalability:** Handle up to 10,000 concurrent users without performance degradation.
 
 ### 5.2 Safety Requirements
-- **Data Privacy:** Protect potential buyer data and ensure compliance with data privacy regulations throughout the analysis process.
-- **Security:** Implement security measures to prevent unauthorized access to the software and safeguard sensitive information.
+- **User Safety:** Ensure data protection and prevent unauthorized access.
+- **Content Safety:** Validate content to prevent malicious elements.
+- **Emergency Procedures:** Implement procedures for system recovery during failures.
 
 ### 5.3 Security Requirements
-- **Access Control:** Implement potential buyer authentication and authorization mechanisms to control access to the software's functionalities and data.
-- **Data Encryption:** Encrypt sensitive data during transmission and storage to prevent unauthorized access or tampering.
-- **Threat Detection:** Employ mechanisms for detecting and responding to security threats such as malware or unauthorized access attempts.
+- **Access Control:** Implement robust authentication and authorization mechanisms.
+- **Data Encryption:** Encrypt all sensitive data in transit and at rest.
+- **Compliance:** Adhere to GDPR, CCPA, and other data protection regulations.
 
 ### 5.4 Software Quality Attributes
-- **Usability:** Ensure the software is intuitive and easy to use, with clear instructions and minimal learning curve for potential buyers.
-- **Reliability:** Build a robust and stable software system that operates consistently and reliably under normal conditions.
-- **Maintainability:** Design the software with modular and well-documented code, facilitating maintenance and future updates.
-- **Performance:** Optimize the software's performance to deliver fast and responsive experiences for potential buyers, even with large datasets and complex analysis tasks.
-- **Scalability:** Design the software to scale horizontally and vertically to accommodate growing user bases and increasing data volumes.
-- **Compatibility:** Ensure compatibility with various operating systems, browsers, and devices to maximize accessibility for potential buyers.
+- **Maintainability:** Ensure codebase is modular and well-documented.
+- **Reliability:** Ensure consistent performance under varying loads.
+- **Usability:** Provide an intuitive and user-friendly interface.
+- **Portability:** Ensure compatibility with multiple operating systems and browsers.
