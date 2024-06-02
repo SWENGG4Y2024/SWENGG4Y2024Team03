@@ -21,7 +21,7 @@
 ## 1. Introduction
 
 ### 1.1 Purpose
-The purpose of this document is to outline the requirements and expectations of stakeholders for the development of a content review summarizer software. It identifies the needs and objectives of the business, potential users, and regulatory bodies to ensure that the final product meets their requirements.
+The purpose of this document is to outline the requirements and expectations of stakeholders for the development of a content review summarizer software. It identifies the needs and objectives of the business, potential buyers, and regulatory bodies to ensure that the final product meets their requirements.
 
 ### 1.2 Scope
 The scope of this document includes the identification of stakeholders, their needs, and how these needs translate into specific requirements for the content review summarizer software.
@@ -29,14 +29,14 @@ The scope of this document includes the identification of stakeholders, their ne
 ### 1.3 Definitions, Acronyms, and Abbreviations
 - **Stakeholder:** An individual or group with an interest in the success of the software project.
 - **Business Requirements:** High-level needs of the organization that the software must fulfill.
-- **Potential User Requirements:** Specific needs and expectations of the end users who will interact with the software.
+- **Potential User Requirements:** Specific needs and expectations of the buyers who will interact with the software.
 
 ### 1.4 References
 - [SWEBOK Guide](https://www.computer.org/web/swebok)
 - [IEEE Standard 830-1998](https://standards.ieee.org/standard/830-1998.html)
 
 ### 1.5 Overview
-This document provides an overview of the stakeholder requirements for the Content Review Summarizer, detailing business, user, system, and regulatory needs, as well as stakeholder profiles and their involvement in the project.
+This document provides an overview of the stakeholder requirements for the Content Review Summarizer, detailing business, system, and regulatory needs, as well as stakeholder profiles and their involvement in the project.
 
 ## 2. Stakeholder Requirements
 
@@ -46,14 +46,13 @@ This document provides an overview of the stakeholder requirements for the Conte
 - **BR-3:** The software must be scalable to handle an increasing number of reviews as the business grows.
 
 ### 2.2 User Requirements
-- **UR-1:** Users should be able to input product reviews through various means (text entry, file upload).
-- **UR-2:** Users should receive concise summaries highlighting key phrases and sentiments within a few seconds.
-- **UR-3:** Users should be able to customize the output format of the summaries.
+- **UR-1:** Actual purchasers should be able to input product reviews through various means (text entry, file upload).
+- **UR-2:** Potential buyers should receive concise summaries highlighting key phrases and sentiments within a few seconds.
+- **UR-3:** Administrators should be able to customize the output format of the summaries.
 
 ### 2.3 System Requirements
 - **SR-1:** The system must support natural language processing capabilities to analyze and summarize text data.
 - **SR-2:** The system must ensure data privacy and comply with relevant data protection regulations.
-- **SR-3:** The system must provide a user-friendly interface for both input and output functionalities.
 
 ### 2.4 Regulatory Requirements
 - **RR-1:** The software must comply with data protection regulations such as GDPR.
@@ -62,7 +61,7 @@ This document provides an overview of the stakeholder requirements for the Conte
 ### 2.5 Assumptions and Dependencies
 - **Assumptions:**
   - Stakeholders will provide necessary access and support for integration with existing systems.
-  - Users will provide genuine and relevant reviews for analysis.
+  - Actual buyers will provide genuine and relevant reviews for analysis.
 - **Dependencies:**
   - The software's performance relies on the availability of natural language processing libraries.
   - Successful integration with external platforms depends on their cooperation and technical compatibility.
@@ -70,12 +69,12 @@ This document provides an overview of the stakeholder requirements for the Conte
 ## 3. Stakeholder Profiles
 
 ### 3.1 Stakeholder Identification
-- **Potential Users/Purchasers:** Individuals or entities using the software to generate summaries of product reviews.
+- **Potential Purchasers:** Individuals or entities using the software to generate summaries of product reviews.
 - **Business Owners:** Interested in the commercial success and integration of the software.
 - **Developers and Quality Team:** Responsible for creating and maintaining the software.
 - **Regulatory Bodies:** Ensure compliance with legal and data protection standards.
 
-### 3.1.1 Potential Users/Purchasers
+### 3.1.1 Potential Purchasers
 - **Content Creators/Publishers:** They want to ensure that their content is accurately summarized and effectively communicates the main points to readers.
 - **Readers/Audience:** They benefit from concise summaries that help them quickly grasp the key points of the content without having to read through the entire piece.
 - **Content Consumers:** These could be individuals or businesses who rely on summarized content for research, decision-making, or staying updated on relevant topics.
@@ -90,7 +89,7 @@ This document provides an overview of the stakeholder requirements for the Conte
 - **Investors/Shareholders:** In the case of companies developing or utilizing summarization technology, investors and shareholders are stakeholders with a financial interest in the success and impact of the product
 
 ### 3.1.3 Development and Quality team
-- **Developers:** Those involved in developing the summarization technology are stakeholders, as they aim to improve and market their product to meet the needs of users and clients.
+- **Developers:** Those involved in developing the summarization technology are stakeholders, as they aim to improve and market their product to meet the needs of customers and clients.
 - **Architect:** Architect of a development Team is supposed to come up with an architecture paradigm that is best suited for developing the tool.
 - **Quality Assurance (QA)Team:** Ensures the software's quality and performance through comprehensive testing.
 
@@ -98,13 +97,13 @@ This document provides an overview of the stakeholder requirements for the Conte
 - **Data Privacy Advocates:** Especially if the summarizer involves user data, advocates for data privacy may have a stake in ensuring that users' information is handled responsibly and ethically.
 
 ### 3.2 Stakeholder Involvement
-- **Potential users/ Purchasers:** User testing sessions, feedback surveys.
+- **Potential Purchasers:** Customer testing sessions, feedback surveys.
 - **Business Owners:** Regular review meetings, feedback on business requirements.
 - **Developers and Quality Team:** Continuous involvement throughout the development lifecycle, from requirements gathering to deployment.
 - **Regulatory Bodies:** Compliance checks, audits, and reviews.
 
 ### 3.3 Stakeholder Priorities
-- **Potential users/Purchasers:** High priority on usability and accuracy of summaries.
+- **Potential Purchasers:** High priority on usability and accuracy of summaries.
 - **Business Owners:** High priority on integration and scalability.
 - **Developers & Quality Team:** High priority on technical feasibility and performance.
 - **Regulatory Bodies:** High priority on data privacy and compliance.
