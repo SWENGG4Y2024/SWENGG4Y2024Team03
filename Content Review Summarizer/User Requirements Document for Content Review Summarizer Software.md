@@ -27,10 +27,9 @@
 The purpose of this document is to detail the requirements of end users for the content review summarizer software. It focuses on functional and non-functional requirements, usability, performance, and security needs from the users' perspective.
 
 ### 1.2 Scope
-The scope of this document includes the specific requirements and expectations of end users who will interact with the content review summarizer software, ensuring that the software meets their needs and enhances their experience.
+The scope of this document includes the specific requirements and expectations of potential buyers who will interact with the content review summarizer software, ensuring that the software meets their needs and enhances their experience.
 
 ### 1.3 Definitions, Acronyms, and Abbreviations
-- **End User:** The individual or entity using the software to generate summaries of product reviews.
 - **Functional Requirements:** Specific behaviors and functionalities that the software must support.
 - **Non-Functional Requirements:** Criteria that judge the operation of a system, such as performance, usability, and security.
 
@@ -66,12 +65,11 @@ This document provides a detailed account of user requirements for the Content R
 ### 2.2 User Environment
 - **Operating Systems:** The software shall support major operating systems such as Windows, macOS, and Linux.
 - **Devices:** The software shall be compatible with various devices, including desktops, laptops, and tablets.
-- **Internet Access:** Users typically need stable internet access for accessing the software and external resources.
+- **Internet Access:** Potential buyers typically need stable internet access(Minimum 5 Mbps speed) for accessing the software and external resources.
 
 ### 2.3 User Training
-- **Training Materials:** The software shall provide comprehensive training materials, including user manuals, interactive tutorials, and knowledge base articles.
-- **Support Channels:** The software shall offer user support through various channels, including email, live chat, and a dedicated helpdesk system.
-- **Feedback Mechanisms:** The software shall incorporate feedback mechanisms such as user surveys, feedback forms, and suggestion boxes.
+- **Support Channels:** The software shall offer support through various channels, including email, live chat, and a FAQ system.
+- **Feedback Mechanisms:** The software shall incorporate feedback mechanisms such as user surveys and feedback forms.
 
 ## 3. Functional Requirements
 
@@ -125,8 +123,8 @@ This document provides a detailed account of user requirements for the Content R
 - **FR-14:** Administrators should have access to comprehensive reports on platform usage, user activity, and system performance.
 
 ## 7. Administrative Functions
-- **FR-15:** The platform should include an administrative panel for managing user accounts, monitoring summaries, and overseeing platform activity.
-- **FR-16:** Administrators should have the ability to approve or reject user registrations to ensure quality control.
+- **FR-15:** The platform should include an administrative panel for managing accounts, monitoring summaries, and overseeing platform activity.
+- **FR-16:** Administrators should have the ability to approve or reject registrations to ensure quality control.
 - **FR-17:** Admins should be able to moderate user-generated content to maintain platform integrity.
 - **FR-18:** The system should support audit trails to log and monitor all critical actions performed by potential purchasers, actual purchasers, and administrators for accountability.
 
