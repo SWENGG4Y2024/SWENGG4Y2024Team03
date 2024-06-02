@@ -1,0 +1,19 @@
+@startuml
+title Context Diagram for Review Summarizer Tool
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+' Define the external entities
+Person(actualBuyer, "Actual Buyer", "Customer who has bought the product")
+Person(potentialBuyer, "Potential Buyer", "Customer interested in product reviews")
+System_Ext(eCommercePlatform, "E-commerce Platform", "Platform hosting product reviews from actual buyers")
+
+' Define the system
+System(reviewSummarizer, "Review Summarizer Tool", "Analyzes reviews and generates summaries")
+
+' Define the relationships
+Rel(actualBuyer, eCommercePlatform, "Submits product reviews")
+Rel(potentialBuyer, eCommercePlatform, "Views product reviews from")
+Rel(eCommercePlatform, reviewSummarizer, "Provides actual buyer reviews for analysis")
+Rel(reviewSummarizer, potentialBuyer, "Displays summarized reviews to")
+@enduml
